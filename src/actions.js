@@ -1,4 +1,5 @@
-import { ORDER_SET_TYPE } from "./constants";
+import axios from "axios";
+import { CATEGORY_LIST_REQUEST, ORDER_SET_TYPE, CATEGORY_LIST_FAIL, CATEGORY_LIST_SUCCESS } from "./constants";
 
 export const setOrderType = (dispatch, orderType) => {
   return dispatch({
@@ -6,3 +7,20 @@ export const setOrderType = (dispatch, orderType) => {
     payload: orderType,
   });
 };
+
+export const listCategories = async (dispatch) => {
+  dispatch({type: CATEGORY_LIST_REQUEST});
+  try {
+    const {data} = await axios.get('/api/categories');
+    return dispatch({
+      type: CATEGORY_LIST_SUCCESS,
+      payload: data,
+    })
+
+  } catch ( error) {
+    return dispatch({
+      type: CATEGORY_LIST_FAIL,
+      payload: error.message,
+    });
+  }
+}
