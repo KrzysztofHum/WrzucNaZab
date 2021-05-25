@@ -35,7 +35,7 @@ export default function ChooseScreen(props) {
             Gdzie dzis zjesz posiłek ?
           </Typography>
           <Box className={styles.cards}>
-            <Card className={[styles.card, styles.space]}>
+            <Card className={[styles.card, styles.space, styles.cardWidth]}>
               <CardActionArea onClick={() => chooseHandler('Zjem na miejscu')}>
                 <CardMedia
                   component="img"
@@ -55,7 +55,7 @@ export default function ChooseScreen(props) {
                 </CardContent>
               </CardActionArea>
             </Card>
-            <Card className={[styles.card, styles.space]}>
+            <Card className={[styles.card, styles.space, styles.cardWidth]}>
               <CardActionArea onClick={() => chooseHandler('Zjem na wynos')}>
                 <CardMedia
                   component="img"

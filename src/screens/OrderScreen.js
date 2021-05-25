@@ -241,7 +241,7 @@ export default function OrderScreen(props) {
       <Box>
         <Box>
           <Box className={[styles.bordered, styles.space]}>
-            Moje zamówienie - {orderType} | Cnea: ${itemsPrice} zł | Zamówione
+            Moje zamówienie - {orderType} | Cnea: {itemsPrice} zł | Zamówione
             posiłki: {itemsCount}
           </Box>
           <Box className={[styles.row, styles.around]}>

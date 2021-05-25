@@ -37,8 +37,12 @@ export const useStyles = makeStyles((theme) => ({
   },
   cards: {
     display: "flex",
+    flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
+  },
+  cardWidth: {
+    maxWidth: 250,
   },
   card: {
     margin: 10,
@@ -51,6 +55,7 @@ export const useStyles = makeStyles((theme) => ({
   },
   media: {
     width: 200,
+    margin: "auto",
   },
   largeButton: {
     width: 250,
@@ -68,13 +73,16 @@ export const useStyles = makeStyles((theme) => ({
     borderStyle: "solid",
   },
   row: {
-    display: 'flex',
+    display: "flex",
     padding: 10,
   },
   around: {
-    justifyContent: 'space-around',
+    justifyContent: "space-around",
   },
   between: {
-    justifyContent: 'space-between',
-  }
+    justifyContent: "space-between",
+  },
+  column: {
+    flexDirection: "column",
+  },
 }));
