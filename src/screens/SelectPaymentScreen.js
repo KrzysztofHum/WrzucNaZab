@@ -52,7 +52,7 @@ export default function SelectPaymentScreen(props) {
                 color="textPrimary"
                 component="p"
               >
-                Zapłac tutaj
+                Płatność przelewem
               </Typography>
             </CardContent>
           </CardActionArea>

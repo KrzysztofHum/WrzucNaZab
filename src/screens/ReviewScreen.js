@@ -124,12 +124,12 @@ export default function ReviewScreen(props) {
             variant="h3"
             component="h3"
           >
-            Zobacz moje {orderType} zamówienie
+            Moje zamówienie :
           </Typography>
         </Box>
         <Grid container>
           {orderItems.map((orderItem) => (
-            <Grid item md={12} key={orderItem.name}>
+            <Grid className={styles.fullWidth} item key={orderItem.name}>
               <Card
                 className={styles.card}
                 onClick={() => productClickHandler(orderItem)}
@@ -140,7 +140,7 @@ export default function ReviewScreen(props) {
                       {" "}
                       <Typography
                         gutterBottom
-                        variant="body2"
+                        variant="h3"
                         color="textPrimary"
                         component="p"
                       >
@@ -150,18 +150,18 @@ export default function ReviewScreen(props) {
                     </Box>
                     <Box className={[styles.row, styles.between]}>
                       <Typography
-                        variant="body2"
+                        variant="body1"
                         color="textSecondary"
                         component="p"
                       >
-                        KCAL: {orderItem.calorie}
+                     Kcal: {orderItem.calorie}
                       </Typography>
                       <Typography
-                        variant="body2"
+                        variant="body1"
                         color="textSecondary"
                         component="p"
                       >
-                        {orderItem.quantity} x zł {orderItem.price}
+                        Ilość: {orderItem.quantity}szt. w cenie {orderItem.price} zł
                       </Typography>
                     </Box>
                   </CardContent>

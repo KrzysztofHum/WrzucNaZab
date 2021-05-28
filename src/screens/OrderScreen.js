@@ -57,7 +57,9 @@ export default function OrderScreen(props) {
   };
 
   const { state, dispatch } = useContext(Store);
+
   const { categories, loading, error } = state.categoryList;
+  
   const {
     products,
     loading: loadingProducts,
@@ -241,7 +243,7 @@ export default function OrderScreen(props) {
       <Box>
         <Box>
           <Box className={[styles.bordered, styles.space]}>
-            Moje zamówienie - {orderType} | Cnea: {itemsPrice} zł | Zamówione
+            Moje zamówienie - {orderType} | Cena: {itemsPrice} zł | Zamówione
             posiłki: {itemsCount}
           </Box>
           <Box className={[styles.row, styles.around]}>

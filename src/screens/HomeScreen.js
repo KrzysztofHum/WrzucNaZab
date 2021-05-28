@@ -20,7 +20,7 @@ export default function HomeScreen(props) {
               </Typography>
               <TouchAppIcon fontSize="large"></TouchAppIcon>
             </Box>
-            <Box className={[styles.center, styles.blue]}>
+            <Box className={[styles.center, styles.secondOrange]}>
               <Logo large></Logo>
               <Typography component="h5" variant="h5">
                 Kliknij aby rozpocząć

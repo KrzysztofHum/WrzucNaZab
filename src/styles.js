@@ -7,7 +7,7 @@ export const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
   },
   navy: {
-    backgroundColor: "#00c3ff",
+    backgroundColor: "#fea735",
   },
   orange: {
     backgroundColor: "#fea735",
@@ -26,8 +26,11 @@ export const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     textAlign: "center",
   },
-  blue: {
-    backgroundColor: "#00c3ff",
+  secondOrange: {
+    backgroundColor: "#f18c44",
+  },
+  fullWidth: {
+    width: "100%",
   },
   largeLogo: {
     height: 100,
